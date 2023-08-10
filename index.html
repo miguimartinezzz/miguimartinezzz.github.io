@@ -4,74 +4,22 @@
   <title>Miguel Martínez</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-    }
+    /* Add any additional styles you want to apply inline */
 
-    .wrapper {
-      background-color: lightpink;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .prof-pic {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-    }
-
-    .name {
-      margin: 10px 0;
-    }
-
-    .subtitle {
-      margin: 0;
-    }
-
-    .bio {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .socials {
-      list-style: none;
-      padding-left: 0;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .socials li {
-      display: inline-block;
-    }
-
-    .socials a {
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .socials a:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-
-    @media (min-width: 768px) {
+    /* Mobile styles */
+    @media (max-width: 600px) {
       .wrapper {
-        flex-direction: row;
+        flex-direction: column;
       }
 
       .left, .right {
-        flex: 1;
+        max-width: 100%;
       }
 
-      .right {
-        padding: 0 20px;
+      .left {
+        text-align: center;
       }
     }
   </style>
@@ -79,15 +27,16 @@
 <body>
   
 <div class="wrapper">
+
   <div class="left">
-    <img class="prof-pic" src="images/yo.jpeg" alt="Profile Picture"/>
+    <img class="prof-pic" src="images/yo.jpeg" width="200" alt="Profile Picture"/>
     <h1 class="name">Miguel Martinez</h1>
     <h4 class="subtitle">CS student</h4>
   </div>
   <div class="right">
     <p class="bio">
-      Computer science student in A Coruña and part-time explorer.
-      Thanks for visiting, here you have some links to my socials and projects.
+      Computer science student in A Coruña and part-time explorer
+      Thanks for visiting, here you have some links to my socials and projects
     </p>
     <ul class="socials">
       <li><a href="https://github.com/miguimartinezzz">Github</a></li>
